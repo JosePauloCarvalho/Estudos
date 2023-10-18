@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inicio</title>
+    
+</head>
+
+<body>
+
+
+    <h1>Qual o seu pais?</h1>
+    <input type="text" name="brasil" id="brasil">
+    <input type="button" value="gerar" onclick="gerar()">
+    <div id="res"> Resultado </div>
+    
+        
+        <script>
+
+          function gerar() {
+            var pais = window.document.querySelector('input#brasil')
+            var res = window.document.querySelector('div#res')
+
+            if (pais == 'brasil'){
+                console.log('você é brasileiro')
+            }
+            else(
+                console.log('voce é estrangeiro')
+            )
+            
+          }
+            
+        </script>
+    
+
+
+
+
+
+</body>
+</html>
